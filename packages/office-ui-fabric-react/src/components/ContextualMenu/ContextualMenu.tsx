@@ -589,7 +589,7 @@ export class ContextualMenu extends BaseComponent<IContextualMenuProps, IContext
         onDismiss: this._onSubMenuDismiss,
         isSubMenu: true,
         id: this.state.subMenuId,
-        shouldFocusOnMount: true,
+        shouldFocusOnMount: this.props.shouldFocusOnMount,
         directionalHint: getRTL() ? DirectionalHint.leftTopEdge : DirectionalHint.rightTopEdge,
         className: this.props.className,
         gapSpace: 0,
